@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Day Off - Agenda de Escala de Trabalho",
     description: "Gerencie sua escala de trabalho de forma simples e interativa com o Day Off.",
-    url: "https://seusite.com", 
+    url: "https://dayoff-nextjs.vercel.app/", 
     siteName: "Day Off",
     images: [
       {

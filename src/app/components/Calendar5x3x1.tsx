@@ -11,7 +11,7 @@ export const Calendar5x3x1 = () => {
     if (!currentDate) return null;
 
     const handleDayClick = (day: Date) => {
-        setOffDays(prevOffDays =>
+        setOffDays(
             [markNextDay(day)]
         )
         const dayOffWeek = weekdays[day.getDay()];
