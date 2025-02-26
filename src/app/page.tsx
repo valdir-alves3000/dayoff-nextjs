@@ -9,12 +9,12 @@ export default function Home() {
 
   return (
     <div className="bg-gray-100 text-center font-sans min-h-screen">
-      <header className="fixed top-0 left-0 w-full bg-white shadow-md p-4 bg-[#f2f3f6] flex justify-start">
+      <header className="fixed top-0 left-0 w-full bg-gray-100 shadow-md p-4 bg-gray-100 flex justify-start">
         <Image
           src="/logo.png"
           alt="Logo"
-          width={150}
-          height={150}
+          width={120}
+          height={120}
           priority={true}
           style={{
             width: 'auto',
@@ -22,7 +22,6 @@ export default function Home() {
           }}
         />
       </header>
-
 
       <div className="pt-32 p-6">
         <label htmlFor="scale" className="block text-lg font-semibold mb-2 text-[#74a0ff]">
