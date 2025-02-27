@@ -17,7 +17,7 @@ export const Calendar6x2 = () => {
     };
 
     const handleDayClick = (day: Date): void => {
-        setOffDays(prevOffDays => [...prevOffDays, markNextDay(day)]);
+        setOffDays([markNextDay(day)]);
         generateDaysOff(day);
     };
 
