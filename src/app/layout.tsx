@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Footer } from "./components/Footer";
+import { ScrollToTop } from "./components/ScrollToTop";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,16 +17,19 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Day Off - Agenda de Escala de Trabalho",
   description: "Gerencie sua escala de trabalho de forma simples e interativa com o Day Off.",
+  icons: {
+    icon: "/logo.png"
+  },
   openGraph: {
     title: "Day Off - Agenda de Escala de Trabalho",
     description: "Gerencie sua escala de trabalho de forma simples e interativa com o Day Off.",
-    url: "https://dayoff-nextjs.vercel.app/", 
+    url: "https://dayoff-nextjs.vercel.app/",
     siteName: "Day Off",
     images: [
       {
-        url: "https://raw.githubusercontent.com/valdir-alves3000/dayoff-nextjs/refs/heads/main/public/logo.png", 
-        width: 1200,
-        height: 630,
+        url: "https://raw.githubusercontent.com/valdir-alves3000/dayoff-nextjs/refs/heads/main/public/logo.png",
+        width: 666,
+        height: 375,
         alt: "Day Off - Logo",
       },
     ],
@@ -50,6 +55,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );
