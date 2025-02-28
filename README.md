@@ -1,6 +1,6 @@
 # **Day Off - Agenda de Escala de Trabalho**
 
-O **Day Off** é um aplicativo web que permite aos usuários selecionar e visualizar suas escalas de trabalho, oferecendo uma visão interativa do calendário de folgas. O aplicativo suporta duas escalas de trabalho populares: **5x3x1** e **6x2**.
+O **Day Off** é um aplicativo web que permite aos usuários selecionar e visualizar suas escalas de trabalho, oferecendo uma visão interativa do calendário de folgas. O aplicativo suporta diversas escalas de trabalho.
 
 ## **Tecnologias Utilizadas**
 
@@ -46,10 +46,34 @@ Certifique-se de ter o **Node.js** instalado na sua máquina. Caso não tenha, b
 
 Ao acessar a aplicação, você poderá:
 
-- **Selecionar a Escala de Trabalho**: Escolha entre as opções de escala **5x3x1** ou **6x2**.
-  
+- **Selecionar a Escala de Trabalho**: Escolha entre as opções de escala disponíveis:
+  - **5x3x1**: Trabalho 5 dias, folga 1, na semana que folga na segunda também folga na sex,sab e dom.
+  - **6x2**: Trabalho 6 dias, folga 2.
+  - **5x1**: Trabalho 5 dias, folga 1 e na semana em que folga na segunda-feira também folga 3 dias (sexta, sábado e domingo).
+  - **4x2**: Trabalho 4 dias, folga 2.
+  - **12x36**: Trabalho 12 horas, folga 36 horas.
+  - **18x12**: Trabalho 18 dias, folga 12 dias.
+  - **24x48**: Trabalho 24 horas, folga 48 horas.
+  - **14x14**: Trabalho 14 dias, folga 14 dias.
+  - **6x1-Sabado-Alternado**: Trabalho 6 dias, folga 1 (com folgas alternadas aos sábados).
+
 - **Visualizar o Calendário**: Dependendo da escala selecionada, o calendário será atualizado para refletir os dias de folga com base na escala escolhida. Clicar em um dia do calendário marca as folgas da semana.
 
-- **Escalas Suportadas**:
-  - **5x3x1**: Trabalho 5 dias, folga 3, trabalho 1.
-  - **6x2**: Trabalho 6 dias, folga 2.
+## **Contribuição**
+
+Contribuições são bem-vindas! Siga os passos abaixo para contribuir:
+
+1. Faça um fork do repositório.
+2. Crie uma branch para sua feature ou correção:
+    ```bash
+    git checkout -b minha-feature
+    ```
+3. Faça commit das suas alterações:
+    ```bash
+    git commit -m "feat: add new work scale"
+    ```
+4. Envie as alterações para o repositório remoto:
+    ```bash
+    git push origin minha-feature
+    ```
+5. Abra um pull request no repositório original.
