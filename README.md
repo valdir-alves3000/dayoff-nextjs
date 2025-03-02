@@ -47,9 +47,9 @@ Certifique-se de ter o **Node.js** instalado na sua máquina. Caso não tenha, b
 Ao acessar a aplicação, você poderá:
 
 - **Selecionar a Escala de Trabalho**: Escolha entre as opções de escala disponíveis:
-  - **5x3x1**: Trabalho 5 dias, folga 1, na semana que folga na segunda também folga na sex,sab e dom.
+  - **5x3x1**: Trabalho 5 dias, 5x3x1: Trabalho 5 dias, folga 1 e na semana em que folga na segunda-feira também folga 3 dias (sexta, sábado e domingo).
   - **6x2**: Trabalho 6 dias, folga 2.
-  - **5x1**: Trabalho 5 dias, folga 1 e na semana em que folga na segunda-feira também folga 3 dias (sexta, sábado e domingo).
+  - **5x1**: Trabalho 5 dias, folga 1.
   - **4x2**: Trabalho 4 dias, folga 2.
   - **12x36**: Trabalho 12 horas, folga 36 horas.
   - **18x12**: Trabalho 18 dias, folga 12 dias.
